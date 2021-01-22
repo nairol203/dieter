@@ -5,8 +5,8 @@ const client = new Discord.Client();
 const chatting = require('./chatting');
 
 client.on('ready', () => {
-    client.user.setActivity(`dir`, { type : 'LISTENING' });
-    
+	client.user.setActivity(`abwesend`, { type : 'LISTENING' });
+	console.log(`${client.user.username} is ready!`);
 	chatting(client);
 });
 
